@@ -75,24 +75,26 @@ function build_data_dictionary()
         data_dictionary["species_bounds_array"] = species_bounds_array
 
         objective_coefficient_array = [
-                                        0; #1-  aspartate
-                                        0; #2-  ATP
-                                        0; #3-  citrulline
-                                        0; #4-  AMP
-                                        0; #5-  diphosphate
-                                        0; #6-  agrininosuccinate
-                                        0; #7-  fumarate
-                                        0; #8-  arginine
-                                        0; #9-  H2O
-                                        0; #10- ornithine
-                                        1; #11- urea
-                                        0; #12- carbamoyl-phosphate
-                                        0; #13- phosphate
-                                        0; #14- NADPH
-                                        0; #15- H
-                                        0; #16- O2
-                                        0; #17- nitric oxide
-                                        0; #18- NADP
+                                0   ; #v1 aspatate + ATP + citrulline -> AMP + diphosphate + argininosuccinate
+                                0   ; #v2 argininosuccinate -> fumarate + arginine
+                                0   ; #v3 arginine + water -> ornithine + urea
+                                0   ; #v4 carbamoyl-phosphate + ornithine -> phosphate + citrulline
+                                0   ; #v5 2arginine + 3NADPH + 3H+ + 4O2 <-> 2citrulline + 2nitric oxide + 3NADP + 4water
+                                0   ; #b1 [] -> carbomyl-phosphate
+                                0   ; #b2 []-> aspartate
+                                0   ; #b3 fumarate -> []
+                                1   ; #b4 urea -> []
+                                0   ; #b5 [] -> ATP
+                                0   ; #b6 AMP -> []
+                                0   ; #b7 diphosphate -> []
+                                0   ; #b8 [] -> water
+                                0   ; #b9 phosphate -> []
+                                0   ; #b10 [] -> NADPH
+                                0   ; #b11 [] -> H+
+                                0   ; #b12 [] -> O2
+                                0   ; #b13 nitric oxide -> []
+                                0   ; #b14 NADP+ -> []
+                                0   ; #b15 H2O -> []
 
                                                 ]
 

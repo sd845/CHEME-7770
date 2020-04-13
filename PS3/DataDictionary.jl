@@ -46,7 +46,7 @@ function build_data_dictionary()
 
                                 ]
 
-        data_dictionary["flux_bounds_array"] = default_bounds_array
+        data_dictionary["flux_bounds_array"] = flux_bounds_array
 
         species_bounds_array = [
 

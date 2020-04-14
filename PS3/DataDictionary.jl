@@ -37,9 +37,9 @@ function build_data_dictionary()
                                 0   10; #b7 diphosphate -> []
                               -10   10; #b8 [] -> water
                                 0   10; #b9 phosphate -> []
-                              -10   10; #b10 [] -> NADPH -->
-                              -10   10; #b11 [] -> H+ -->
-                              -10   10; #b12 [] -> O2 -->
+                              -10   10; #b10 [] -> NADPH --> []
+                              -10   10; #b11 [] -> H+ --> []
+                              -10   10; #b12 [] -> O2 --> []
                               -10   10; #b13 [] --> nitric oxide -> []
                               -10   10; #b14 []--> NADP+ -> []
                               -10   10; #b15 H2O -> []

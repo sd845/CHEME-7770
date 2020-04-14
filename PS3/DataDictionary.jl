@@ -18,8 +18,8 @@ function build_data_dictionary()
         v1_max = kcat_v1*E*(4.67E-3/(4.67E-3 + 3.92E-4))*(1.49E-2/(1.49E-2 + 1.54E-4));
         v2_max = kcat_v2*E*1;
         v3_max = kcat_v3*E*2.55E-4/(1.55E-3 + 2.55E-4);
-        v4_max = kcat_v4*E*1.01E-5/(1.01E-5 + 8.50E-4); #data not found in Park et al. for homo sapiens
-        v5_max = kcat_v5*E*2.55E-4/(3.50E-06 + 2.55E-4);
+        v4_max = kcat_v4*E*4.49E-3/(1.60E-3 + 4.49E-3); #data not found in Park et al. for homo sapiens
+        v5_max = kcat_v5*E*2.55E-4/(4.40E-03 + 2.55E-4);
 
         flux_bounds_array = [
 
@@ -35,14 +35,14 @@ function build_data_dictionary()
                                 0   10; #b5 [] -> ATP
                                 0   10; #b6 AMP -> []
                                 0   10; #b7 diphosphate -> []
-                                0   10; #b8 [] -> water
+                              -10   10; #b8 [] -> water
                                 0   10; #b9 phosphate -> []
-                                0   10; #b10 [] -> NADPH
-                                0   10; #b11 [] -> H+
-                                0   10; #b12 [] -> O2
-                                0   10; #b13 nitric oxide -> []
-                                0   10; #b14 NADP+ -> []
-                                0   10; #b15 H2O -> []
+                              -10   10; #b10 [] -> NADPH -->
+                              -10   10; #b11 [] -> H+ -->
+                              -10   10; #b12 [] -> O2 -->
+                              -10   10; #b13 [] --> nitric oxide -> []
+                              -10   10; #b14 []--> NADP+ -> []
+                              -10   10; #b15 H2O -> []
 
                                 ]
 
